@@ -1,0 +1,1 @@
+* (maxNum - minNum + 1);

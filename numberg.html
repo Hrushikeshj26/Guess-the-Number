@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess The Number</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center absolute inset-0 -z-10 h-full w-full bg-yellow-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+
+  <div class="bg-white p-8 rounded-xl shadow-xl text-center w-[90%] max-w-md">
+    <h1 class="text-3xl font-bold mb-4">🎯 Guess the Number</h1>
+    <p class="mb-4 text-gray-600">Enter a number between <span id="min">1</span> and <span id="max">100</span></p>
+    
+    <input id="userGuess" type="number" class="border p-2 rounded w-full mb-4" placeholder="Your guess..." />
+    <button id="checkBtn" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 w-full">Check</button>
+
+    <p id="message" class="mt-4 text-lg font-bold"></p>
+  </div>
+
+  <script src="numberg.js"></script>
+</body>
+</html>
